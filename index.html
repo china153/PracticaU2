@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Ingeniería en Sistemas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('./fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Hacemos que ocupe el 90% del ancho */
+            max-width: 500px; /* Limite máximo para pantallas grandes */
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            font-size: 2rem;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 1.8rem; /* Reducimos un poco el tamaño */
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+                width: 90%; /* Más amplio en pantallas pequeñas */
+            }
+            .button {
+                padding: 10px 15px;
+                font-size: 12px;
+            }
+            h1 {
+                font-size: 1.5rem; /* Reducimos más el tamaño del encabezado */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingeniería en Sistemas - Prácticas - Karen</h1>
+        <a href="Practica 1\cv.html" class="button">Práctica 1</a>
+        <a href="Practica 2\menu.html" class="button">Práctica 2</a>
+        <a href="Practica 3\menu.html" class="button">Práctica 3</a>
+        <a href="Practica 4\menu.html" class="button">Práctica 4</a>
+    </div>
+</body>
+</html>
