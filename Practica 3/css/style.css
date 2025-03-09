@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la p&aacute;gina */
+body {
+    background-color: rgb(188, 201, 160); 
+    color: rgb(12, 12, 12); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    background-color: rgb(253, 251, 251); 
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    color: rgb(20, 20, 20);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+li {
+    float: left;
+}
+
+li a, .navegacion {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .navegacion {
+    background-color: rgb(72, 106, 169);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+/* Estilos del men&uacute; de navegaci&oacute;n  inicio etc*/
+.navegacion a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+/* para que se subrayen los enlaces*/
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los p&aacute;rrafos */
+p {
+    text-align: justify;
+    margin-bottom: 15px; /* Agrega espacio entre p&aacute;rrafos */
+    line-height: 1.6;
+    color: rgb(25, 24, 24); /* Texto blanco */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    text-align: center;
+    color: black; /* Texto blanco */
+}
+
+a{
+    color:#2980B9
+}
+
+/*estilos para el index*/
+/* Estilos del t&iacute;tulo del encabezado */
+.titulo {
+    font-size: 30px;
+    color: rgb(21, 20, 20);
+}
+
+/* Secci&oacute;n de imagen (Hero) */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta la altura */
+    background:url('../img/diseño.png') no-repeat center center/cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* Espacio despu&eacute;s de la imagen */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+
+/* T&iacute;tulo sobre la imagen */
+.titulo-sobre-imagen {
+    font-size: 60px;
+    color: rgb(245, 239, 239);
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+/* Bot&oacute;n de Explorar Ajustable */
+.boton-accion:hover{
+    background-color: rgb(50, 140, 145);
+}
+
+.boton-accion {   /*es del index*/
+    background-color: rgb(65, 167, 170);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px; /* Lo coloca en la parte inferior de la imagen */
+    left: 50%;
+    transform: translateX(-50%);/*para que quede bien alineado*/
+    font-weight: bold;/*pone negritas*/
+    transition: background 0.3s ease-in-out;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos de la secci&oacute;n de Contacto */
+.contacto {
+    background-color:rgb(247, 240, 240); /* Fondo negro */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contacto p {
+    margin: 10px 0;
+    color: rgb(12, 12, 12);
+}
+
+.tarjeta{
+    background-color: white;
+    min-width: 400px;
+    min-height: 400px; /* Asegura que todas las tarjetas tengan la misma altura m&iacute;nima */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan bien */
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color:#2980B9
+}
+
+.tarjeta p{
+    padding: 0 1rem 1rem; /*espacio del contenido [arriba] [izquierda y derecha] [abajo];*/
+    font-size: 0.9rem;
+    flex-grow: 1;
+    color:black
+}
+
+.tarjeta-container {
+    text-align: center;
+    padding: 40px 40px;
+    height: auto; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: rgb(65, 167, 170);
+    font-size: 25px;
+}
+.tarjetas {
+    display: flex;        
+    justify-content: center; 
+    align-items: stretch;  
+    gap: 15px;             
+}
+
+/* Secci&oacute;n de contenido */
+.contenido {
+    text-align: left;
+    line-height: 1.6;
+    color: rgb(29, 27, 27);
+    padding: 20px 30px;
+    text-align: justify;  
+    max-width: 1000px;  
+    margin: 0 auto;  
+}
+
+.contenido li {
+    margin-bottom: 10px;
+    font-size: 18px; 
+}
+
+
+.contenido p:last-child {
+    margin-bottom: 5px;
+}
+
+/*secci&oacute;n del subt&iacute;tulo revoluciona..*/
+.sub {
+    color: rgb(3, 43, 104); 
+    padding: 50px 30px; 
+    text-align: center;  
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* intereses lista*/
+ul{
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+/* Estilos para el perfil con imagen e informaci&oacute;n alineada */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    padding: 20px; /* Espaciado alrededor */
+}
+
+.foto-perfil {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit:fill; 
+    border: 3px solid #1d1e1e;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Organiza la info en una columna */
+}
+
+.tcv {
+    margin-bottom: 10px; /* Espacio entre el nombre y el email */
+}
+
+.info p {
+    margin: 5px 0; /* Espacio entre l&iacute;neas */
+}
+
+/* Ajuste de la tabla para mayor legibilidad */
+table {
+    border-collapse:separate;
+    width: 100%;
+    margin-top: 20px; /* Espacio superior */
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1c7340; 
+    color: white;
+}
+
+/*centrar texto de hobbbies*/
+section p, h2, ul, h3, li{
+    max-width: 800px; 
+    margin: auto;
+    text-align: justify; 
+}
+
+.contenedor-centro {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   /* width: auto;*/
+}
+
+.contenedor-musica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 10px;
+}
+
+audio {
+    max-width: 300px; 
+}
+
+iframe {
+    max-width: 300px; 
+}
+
+#mapa{
+    max-width: 800px;
+}
+
+/*estilos del bot&oacute;n desplejable*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
